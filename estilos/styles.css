@@ -68,7 +68,14 @@ p{
 .barra {
     display: flex;
     justify-content: space-between;
-    align-items: inicial;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+
+.barra-index {
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
     padding-top: 2.5rem;
 }
 
@@ -87,21 +94,72 @@ p{
     font-size: 4rem;
 }
 
-.barra .titulo {
-    color: #ffffff;
-    margin: 0;
-    font-size: 10rem;
-    font-family: 'Audiowide', cursive;
-}
+
 
 .titulo2 {
     color: #da3b57;
     margin-left: 1rem;
+    text-shadow: 0.2rem 0.2rem 0rem black;
+    
 }
 
-.enlace-titulo {
+
+.enlace-index h1 {
     text-decoration: none;
+    display: inline-block;
+      
+    text-shadow: 0.5rem 0.5rem 0.7rem #1adcbd;   
+
+    color: #ffffff;
+    margin: 0;
+    font-size: 10rem;
+    font-family: 'Audiowide', cursive;
+
+/**
+    box-shadow: .2rem .5rem 3rem 1rem #da3b57;
+    border: 0.5rem double;
+    border-radius: 10rem;
+    padding: 2rem; 
+ **/
 }
+
+
+
+
+
+
+.enlace-index-barra {
+    text-decoration: none;
+    display: inline-block;
+      
+    text-shadow: 0.5rem 0.5rem 0.7rem #1adcbd;   
+    transition: 1s;
+
+    color: #ffffff;
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: 'Audiowide', cursive;
+
+
+
+    box-shadow: .2rem .5rem 3rem 1rem #da3b57;
+    border: 0.5rem double;
+    border-radius: 10rem;
+    padding: 2rem; 
+
+
+}
+
+
+.enlace-index-barra:hover {
+    transform: scale(1.2);
+
+}
+
+
+
+
+
 
 .navegacion a {
     display: inline-block;
@@ -121,6 +179,7 @@ p{
 .navegacion a:hover {
     color: #da3b57;
     transform: scale(1.5);
+    text-shadow: 0.1rem 0.1rem 0.2rem #1adcbd;
 }
 
 
@@ -141,6 +200,12 @@ p{
     box-shadow: .2rem .5rem 5rem .2rem #da3b57;
     background-color: #1a95dc;
     margin-bottom: 2rem;
+    
+    transition: 0.5s;
+}
+
+.secContenido:hover {
+    transform: scale(1.05);
 }
 
 .secContenido img {
@@ -167,6 +232,12 @@ p{
 .contenido-secContenido p {
     margin: 0.3rem;
     font-family: 'Audiowide', cursive;
+   
+}
+
+.contenido-secContenido h3
+ {
+    text-shadow: 0.2rem 0.2rem 0.4rem #da3b57; 
 }
 
 .contenido-secContenido a {
@@ -198,6 +269,7 @@ p{
 .boton-morado:hover {
     border: 0.4rem double #1adcbd;
     box-shadow: .2rem .5rem 5rem .2rem #1adcbd;
+    text-shadow: 0.1rem 0.1em 0.5rem white;
   
    
 }
@@ -275,3 +347,64 @@ p{
     max-width: 100%;
 
 }
+
+
+/**ENTRADAS**/
+
+
+
+.contenido-entrada{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.contenido-entrada:last-of-type{
+    margin-bottom: 3rem;
+}
+.contenido-entrada .imagen{
+    flex-basis: 25%;
+    
+}
+.contenido-entrada .imagen img{
+    border-radius: 4rem;
+    max-height: 40rem;
+    max-width: 30rem;
+    padding: 2rem;
+    
+}
+
+
+.contenido-entrada .texto-entrada{
+    flex-basis: calc(75% - 1rem);
+}
+
+.Entradas a {
+    text-decoration: none;
+}
+
+.Entradas a h4{
+    margin:0;
+    color: #da3b57;
+    text-shadow: 0.2rem 0.2rem 0rem black;    
+}
+
+.Entradas a h4:hover{
+    color:blue;  
+ }
+
+
+.Entradas a h4::after{
+    content: '';
+    display: block;
+    width: calc(100% - 0rem);
+    height: 0.5rem;
+    background-color: gray;
+    margin-top: 0rem;
+    border-radius: 3rem;
+ }
+
+ .texto-entrada span{
+    color: blue;
+ }
+
+
