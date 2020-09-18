@@ -50,6 +50,25 @@ p {
 }
 
 
+
+
+/**Utilidades **/
+/**
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.centrar-texto{
+    text-align: center;    
+}
+
+.contenido-centrado{
+    max-width: 80rem;
+}
+
+**/
+
 /** Header **/
 
 .site_header {
@@ -322,6 +341,7 @@ p {
 
 .contenido-entrada .imagen {
     flex-basis: 25%;
+    
 }
 
 .contenido-entrada .imagen img {
@@ -360,5 +380,24 @@ p {
 }
 
 .texto-entrada span {
-    color: blue;
+    color: #da3b57;
+    font-weight: bolder;
+}
+
+/**WORKING **/
+
+.texto-working  {
+    color: #da3b57;
+    text-shadow: 0.2rem 0.2rem 0rem black;
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+    font-weight: bolder;
+    margin: 0;  
+}
+
+.contenedor-working{
+    height: 50rem;
+    margin-top: 10rem;
+
 }
