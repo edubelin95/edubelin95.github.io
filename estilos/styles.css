@@ -401,3 +401,62 @@ p {
     margin-top: 10rem;
 
 }
+
+ /**CONTACTO**/
+.formulario{
+    
+    max-width: 70%;
+}
+
+ label{
+    display: block;
+    font-family: 'Kufam', cursive;
+    margin: 0.5rem;
+
+}
+
+input,select,textarea{
+    
+    background-color:rgb(246, 226, 173);
+    border-radius: 3rem;
+    display: block;
+    padding: 1rem;
+    width: 50%;
+    margin: 0rem;  
+}
+
+input,select,textarea:last-of-type {
+    margin-bottom: 3rem;
+}
+
+textarea{
+    height: 10rem;
+
+
+}
+
+
+fieldset{
+  
+    border-radius: 2rem;
+    border: 2rem;
+    border: 0.2rem solid #da3b57;
+    margin-top: 2rem;  
+
+}
+
+legend{
+    font-family: 'Kufam', cursive;
+    padding: 1rem;
+    color: #da3b57;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-left: 2rem;
+
+}
+
+.contenedor-boton-morado-formulario{
+    width: 50rem;
+    margin-bottom: 4rem;
+    
+}
