@@ -84,6 +84,9 @@ p {
     background-size: cover;
     height: 100vh;
     min-height: 60rem;
+    /**Nuevo-->**/
+    min-width: 60rem;
+    /**<--Nuevo**/
 }
 
 .barra {
@@ -426,7 +429,7 @@ label {
 input,
 select,
 textarea {
-    background-color: rgb(246, 226, 173);
+    background-color: rgba(173, 246, 201, 0.438);
     border-radius: 3rem;
     display: block;
     padding: 1rem;
@@ -453,11 +456,11 @@ fieldset {
 
 legend {
     font-family: 'Kufam', cursive;
-    padding: 1rem;
     color: #da3b57;
     font-size: 2rem;
     text-transform: uppercase;
     margin-left: 2rem;
+    padding: 1rem!important;
 }
 
 .contenedor-boton-morado-formulario {
@@ -469,3 +472,6 @@ legend {
     width: 50rem;
     margin-bottom: 4rem;
 }
+
+
+/**Media Querys**/
