@@ -18,7 +18,7 @@ img {
 }
 
 .contenedor {
-    max-width: 120rem;
+    max-width: 95%;
     margin: 0 auto;
 }
 
@@ -52,22 +52,18 @@ p {
 
 /**Utilidades **/
 
-
-/**
-.seccion{
+.seccion {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-.centrar-texto{
-    text-align: center;    
+.centrar-texto {
+    text-align: center;
 }
 
-.contenido-centrado{
+.contenido-centrado {
     max-width: 80rem;
 }
-
-**/
 
 
 /** Header **/
@@ -85,7 +81,7 @@ p {
     height: 100vh;
     min-height: 60rem;
     /**Nuevo-->**/
-    min-width: 60rem;
+    min-width: 40rem;
     /**<--Nuevo**/
 }
 
@@ -97,10 +93,15 @@ p {
 }
 
 .barra-index {
-    display: flex;
-    justify-content: space-between;
-    align-items: initial;
     padding-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .barra-index {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .contenido-header {
@@ -108,12 +109,19 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .contenido-header {
+        text-align: left;
+    }
 }
 
 .contenido-header h1 {
     color: #ffffff;
     padding-bottom: 2rem;
-    max-width: 70rem;
+    max-width: 60rem;
     line-height: 1.8;
     font-size: 4rem;
 }
@@ -130,14 +138,8 @@ p {
     text-shadow: 0.5rem 0.5rem 0.7rem #1adcbd;
     color: #ffffff;
     margin: 0;
-    font-size: 10rem;
+    font-size: 5rem;
     font-family: 'Audiowide', cursive;
-    /**
-    box-shadow: .2rem .5rem 3rem 1rem #da3b57;
-    border: 0.5rem double;
-    border-radius: 10rem;
-    padding: 2rem; 
- **/
 }
 
 .enlace-index-barra {
@@ -160,18 +162,23 @@ p {
 }
 
 .navegacion a {
-    display: inline-block;
+    display: block;
     font-family: 'Audiowide', cursive;
     text-decoration: none;
     color: #ffffff;
     font-weight: 700;
     font-size: 2rem;
-    margin-right: 3rem;
     transition: .5s;
 }
 
-.navegacion a:last-of-type {
-    margin-right: 0;
+@media (min-width: 768px) {
+    .navegacion a {
+        display: inline-block;
+        margin-right: 3rem;
+    }
+    .navegacion a:last-of-type {
+        margin-right: 0;
+    }
 }
 
 .navegacion a:hover {
@@ -212,9 +219,11 @@ p {
     border-top-right-radius: 3rem;
 }
 
-.contenedor-secContenido {
-    display: flex;
-    justify-content: space-between;
+@media (min-width: 768px) {
+    .contenedor-secContenido {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .contenido-secContenido {
