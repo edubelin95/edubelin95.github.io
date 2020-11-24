@@ -288,11 +288,13 @@ p {
 
 /**NOVEDAD**/
 
-.novedad {
-    background-color: white;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 0rem;
+@media (min-width: 768px) {
+    .novedad {
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 0rem;
+    }
 }
 
 .contenido-novedad {
@@ -322,6 +324,16 @@ p {
     padding: 3rem 0rem;
     display: flex;
     justify-content: space-between;
+}
+
+.contenedor-footer .navegacion {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .contenedor-footer .navegacion {
+        display: block;
+    }
 }
 
 .copyright {
