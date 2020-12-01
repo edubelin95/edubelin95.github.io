@@ -208,8 +208,10 @@ p {
     transition: 0.5s;
 }
 
-.secContenido:hover {
-    transform: scale(1.05);
+@media (min-width: 768px) {
+    .secContenido:hover {
+        transform: scale(1.05);
+    }
 }
 
 .secContenido img {
