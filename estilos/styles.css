@@ -123,7 +123,13 @@ p {
     padding-bottom: 2rem;
     max-width: 60rem;
     line-height: 1.8;
-    font-size: 4rem;
+    font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+    .contenido-header h1 {
+        font-size: 4rem;
+    }
 }
 
 .titulo2 {
