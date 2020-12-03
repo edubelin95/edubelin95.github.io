@@ -118,7 +118,7 @@ p {
     }
 }
 
-.contenido-header h1 {
+.contenido-header a h1 {
     color: #ffffff;
     padding-bottom: 2rem;
     max-width: 30rem;
@@ -126,9 +126,14 @@ p {
     font-size: 3rem;
 }
 
+.contenido-header h1 {
+    color: #ffffff;
+}
+
 @media (min-width: 768px) {
-    .contenido-header h1 {
+    .contenido-header a h1 {
         max-width: 60rem;
+        font-size: 9rem;
     }
 }
 
