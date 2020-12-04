@@ -92,10 +92,6 @@ p {
     padding-top: 2.5rem;
 }
 
-.barra-index {
-    padding-top: 2.5rem;
-}
-
 @media (min-width: 768px) {
     .barra-index {
         display: flex;
@@ -109,30 +105,30 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     text-align: center;
 }
 
 @media (min-width: 768px) {
     .contenido-header {
-        text-align: left;
+        align-items: initial;
     }
 }
 
-.contenido-header a h1 {
-    color: #ffffff;
-    padding-bottom: 2rem;
-    max-width: 30rem;
-    line-height: 1.8;
-    font-size: 3rem;
-}
+
+/* Cita */
 
 .contenido-header h1 {
     color: #ffffff;
+    padding-bottom: 2rem;
+    max-width: 40rem;
+    line-height: 1.8;
+    font-size: 2.5rem;
 }
 
 @media (min-width: 768px) {
-    .contenido-header a h1 {
-        max-width: 60rem;
+    .contenido-header h1 {
+        max-width: 65rem;
         font-size: 9rem;
     }
 }
@@ -149,14 +145,23 @@ p {
     text-shadow: 0.2rem 0.2rem 0rem black;
 }
 
+
+/* Logo */
+
 .enlace-index h1 {
     text-decoration: none;
     display: inline-block;
     text-shadow: 0.5rem 0.5rem 0.7rem #1adcbd;
     color: #ffffff;
     margin: 0;
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: 'Audiowide', cursive;
+}
+
+@media (min-width: 768px) {
+    .enlace-index h1 {
+        font-size: 10rem;
+    }
 }
 
 .enlace-index-barra {
