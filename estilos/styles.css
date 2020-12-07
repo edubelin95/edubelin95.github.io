@@ -180,6 +180,9 @@ p {
     transform: scale(1.2);
 }
 
+
+/** Navegacion **/
+
 .navegacion a {
     display: block;
     font-family: 'Audiowide', cursive;
@@ -377,10 +380,12 @@ p {
 
 /**ENTRADAS**/
 
-.contenido-entrada {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
+@media (min-width: 768px) {
+    .contenido-entrada {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
 }
 
 .contenido-entrada:last-of-type {
@@ -458,7 +463,12 @@ p {
 .formulario {
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .formulario {
+        align-items: center;
+    }
 }
 
 
@@ -508,13 +518,18 @@ legend {
 }
 
 .contenedor-boton-morado-formulario {
-    /**Nuevo-->**/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /**<--Nuevo**/
-    width: 50rem;
     margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+    .contenedor-boton-morado-formulario {
+        width: 50rem;
+    }
+}
+
+.contenedor-boton-morado-formulario .boton {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
