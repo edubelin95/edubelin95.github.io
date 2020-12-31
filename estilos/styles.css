@@ -586,4 +586,13 @@ legend {
 }
 
 
+/** Semanal **/
+
+.contenedor-semanal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 /**Media Querys**/
